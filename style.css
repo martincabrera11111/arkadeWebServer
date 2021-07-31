@@ -9,6 +9,9 @@ body{
     list-style: none;
     text-decoration: none;
 }
+html, body{
+    height:100%;
+}
 .sidebar{
     position: fixed;
     left: -250px;
@@ -91,10 +94,106 @@ label #cancel{
 #check:checked ~ label #cancel{
     left: 195px;
 }
-section{
-    background: url(arkim.jpg) no-repeat;
-    background-position: center;
+.container{
+    background-image: url(arkim.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
+    
+    
 
+    
+    
+
+}
+
+@media screen and (max-width: 1000px) {
+    .sidebar{
+        position: fixed;
+        left: -2000px;
+        width: 1000px;
+        height: 100%;
+        background: #042331;
+        transition: all .5s ease;
+    }
+
+
+
+    .sidebar header{
+        
+        font-size: 60px;
+        color: white;
+        text-align: center;
+        line-height: 120px;
+        background: #063146;
+        user-select: none;
+        
+    
+    }
+    .sidebar ul a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 300px;
+        font-size: 60px;
+        color: white;
+        padding-left: 303px;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        border-bottom: 1px solid black;
+        transition: .4s;
+    
+    
+    }
+    label #btn, label #cancel{
+        position: absolute;
+        cursor: pointer;
+        background: #000000;
+        border-radius: 100px;
+    
+    }
+    label #btn{
+        position: fixed;
+        left: 70px;
+        top: 80px;
+        font-size: 100px;
+        color: white;
+        padding: 20px 20px;
+        transition: all .5s;
+       
+    
+    }
+    label #cancel{
+        z-index: 1111;
+        left: -195px;
+        top: 17px;
+        font-size: 50px;
+        color: white;
+        padding: 15px 15px;
+        transition: all .5s ease;
+    }
+    #check:checked ~ label #cancel{
+        left: 70px;
+        top 60px;
+    
+    }
+    .container{
+        
+        background: url(arkim.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 1000px 800px;
+        background-attachment: fixed;
+        
+        
+        
+        
+        
+    
+        
+        
+    
+    }
 }
