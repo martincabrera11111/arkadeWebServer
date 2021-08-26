@@ -12,7 +12,9 @@ body{
 html, body{
     height:100%;
 }
+
 .sidebar{
+    top:0px;
     position: fixed;
     left: -250px;
     width: 250px;
@@ -41,26 +43,21 @@ html, body{
     border-top: 1px solid rgba(255, 255, 255, .1);
     border-bottom: 1px solid black;
     transition: .4s;
-
-
 }
 ul li:hover a{
     padding-left: 50px;
-
 }
 .sidebar ul a i{
     margin-right: 16px;
-
 }
 #check{
     display: none;
 }
 label #btn, label #cancel{
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     background: #042331;
     border-radius: 3px;
-
 }
 label #btn{
     left: 40px;
@@ -69,8 +66,6 @@ label #btn{
     color: white;
     padding: 6px 6px;
     transition: all .5s;
-   
-
 }
 label #cancel{
     z-index: 1111;
@@ -83,117 +78,89 @@ label #cancel{
 }
 #check:checked ~ .sidebar{
     left: 0;
-    
 }
 #check:checked ~ label #btn{
     left: 250px;
     opacity: 0%;
     pointer-events: none;
-
 }
 #check:checked ~ label #cancel{
     left: 195px;
 }
 .container{
-    background-image: url(arkim.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
+    width: 100%;
+    height: 650px;
+    background: #171614;
+}
+.Server{
+    width: 100%;
+    height: 120px;
+    background: #0d0d0d;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 120px;
     
-    
-
-    
-    
-
+}
+.Server  i{
+    margin-left: 8px;
+    font-size:15px;
+    color: white; 
+}
+.arkade{
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    position: auto;
+}
+.ragna{
+    width: 170px;
+    margin-left: 40px;
+    margin-top: 12px;
+}
+.crystal{
+    width: 120px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: -40px;
+}
+.valguero{
+    width: 170px;
+    margin-left: 100px;
+    margin-top: 12px;
+}
+.container .titulo{
+    font-size: 33px;
+    color:white;
+    text-align: center;
+    line-height: 90px;
+}
+.container .texto{
+    font-size: 18px;
+    color:white;
+    padding-left: 180px;
+    line-height: 20px;
+}
+.container .texto2{
+    font-size: 18px;
+    color:white;
+    padding-left: 180px;
+    padding-top: 40px;
+    line-height: 20px;
+}
+.container .texto3{
+    font-size: 18px;
+    color:white;
+    padding-left: 180px;
+    line-height: 20px;
 }
 
-@media screen and (max-width: 1000px) {
-    .sidebar{
-        position: fixed;
-        left: -2000px;
-        width: 1000px;
-        height: 100%;
-        background: #042331;
-        transition: all .5s ease;
-    }
-
-
-
-    .sidebar header{
-        
-        font-size: 60px;
-        color: white;
-        text-align: center;
-        line-height: 120px;
-        background: #063146;
-        user-select: none;
-        
+.container .discord2{
+    text-align: center;
+    color:#0f7dd6;
+    font-size:18px;
+    line-height: 130px;
     
-    }
-    .sidebar ul a{
-        display: block;
-        height: 100%;
-        width: 100%;
-        line-height: 300px;
-        font-size: 60px;
-        color: white;
-        padding-left: 303px;
-        box-sizing: border-box;
-        border-top: 1px solid rgba(255, 255, 255, .1);
-        border-bottom: 1px solid black;
-        transition: .4s;
-    
-    
-    }
-    label #btn, label #cancel{
-        position: absolute;
-        cursor: pointer;
-        background: #000000;
-        border-radius: 100px;
-    
-    }
-    label #btn{
-        position: fixed;
-        left: 70px;
-        top: 80px;
-        font-size: 100px;
-        color: white;
-        padding: 20px 20px;
-        transition: all .5s;
-       
-    
-    }
-    label #cancel{
-        z-index: 1111;
-        left: -195px;
-        top: 17px;
-        font-size: 50px;
-        color: white;
-        padding: 15px 15px;
-        transition: all .5s ease;
-    }
-    #check:checked ~ label #cancel{
-        left: 70px;
-        top 60px;
-    
-    }
-    .container{
-        
-        background: url(arkim.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 1000px 2100px;
-        background-attachment: fixed;
-        
-        
-        
-        
-        
-    
-        
-        
-    
-    }
 }
+
